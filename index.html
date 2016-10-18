@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Therapist Freelance</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg">
+	<header>
+		<div class="container flex">
+			<div class="logo">
+				<img src="img/logo.png" alt="">
+			</div>
+			<nav>
+				<ul class="flex">
+					<li><a href="">Therapist</a></li>
+					<li><a class="open-moda2">Sign-up</a></li>
+					<li><a class="open-modal">Sign-in</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="container">
+		<div class="input_search">
+			<input type="text">
+			<div class="input_search_filter">
+				<ul>
+					<li><span>Nursing</span></li>
+					<li><span>Occupational Therapy</span></li>
+					<li><span>Physical Therapy</span></li>
+					<li><span>Caregiver</span></li>
+				</ul>
+			</div>
+		</div>
+		<div class="card_list">
+			<a href="" class="card_tile">
+				<div class="img_content">
+					<img src="img/p1.jpg" alt="">
+				</div>
+				<div class="card_tile_info">
+					<div class="card_tile_title">Name</div>
+				</div>
+			</a>
+			<a href="" class="card_tile">
+				<div class="img_content">
+					<img src="img/p2.jpg" alt="">
+				</div>
+				<div class="card_tile_info">
+					<div class="card_tile_title">Name, <span class="card_tile_titlesub">np</span></div>
+				</div>
+			</a>
+			<a href="" class="card_tile">
+				<div class="img_content">
+					<img src="img/p3.jpg" alt="">
+				</div>
+				<div class="card_tile_info">
+					<div class="card_tile_title">Name, <span class="card_tile_titlesub">np</span></div>
+				</div>
+			</a>
+			<a href="" class="card_tile">
+				<div class="img_content">
+					<img src="img/p4.jpg" alt="">
+				</div>
+				<div class="card_tile_info">
+					<div class="card_tile_title">Name, <span class="card_tile_titlesub">np</span></div>
+				</div>
+			</a>
+			<a href="" class="card_tile">
+				<div class="img_content">
+					<img src="img/p5.jpg" alt="">
+				</div>
+				<div class="card_tile_info">
+					<div class="card_tile_title">Name, <span class="card_tile_titlesub">np</span></div>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="modal">
+		<div class="close_btn">X</div>
+		<img src="img/logo.png" alt="">
+		<form action="" method="POST">
+			<input type="text" name="username" placeholder="username" class="sign-input">
+			<input type="password" name="pass" placeholder="password" class="sign-input">
+			<button type="submit" name="submit" class="btn">Login</button>
+		</form>
+		<div class="signup_msg">
+			<p>Doesn't have yet account? <a href="">sign-up</a></p>
+		</div>
+	</div>
+	<div class="modal2">
+		<div class="close_btn">X</div>
+		<img src="img/logo.png" alt="">
+		<form action="inc/process.php?action=register" method="POST">
+			<div class="sign-up_input">
+				<label for="">First name</label>
+				<input class="sign-input" type="text" name="fname" required>
+			</div>
+			<div class="sign-up_input">
+				<label for="">Last name</label>
+				<input class="sign-input" type="text" name="lname" required>
+			</div>
+			<div class="sign-up_input">
+				<label for="">username</label>
+				<input class="sign-input" type="text" name="username" required>
+			</div>
+			<div class="sign-up_input">
+				<label for="">password</label>
+				<input class="sign-input" type="password" name="pass" required>
+			</div>
+			<div class="sign-up_input">
+				<span class="" style="display: none;">Not matched</span>
+				<label for="">confirm password</label>
+				<input class="sign-input" type="password" name="con_pass">
+			</div>
+			<button type="submit" name="submit" class="btn full">Register now</button>
+		</form>
+		<div class="signup_msg">
+			<p>Already have account? <a href="">sign-in</a></p>
+		</div>
+	</div>
+	<div class="overlay"></div>
+	<footer>
+		<div class="container">
+			<div class="footer_inner">
+				<img src="img/logo.png" alt="">
+				<p>Copyright © 2016 Therapist Freelance</p>
+			</div>
+		</div>
+	</footer>
+	<script src="js/jquery-1.9.1.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
